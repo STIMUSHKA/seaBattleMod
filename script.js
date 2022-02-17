@@ -211,7 +211,6 @@ const show = {
     }
 };
 
-
 const paintItMiss = (id) => {
     const ordinat = div(parseInt(id, 10), 10);
     const abciss = mod(parseInt(id, 10), 10);
@@ -221,7 +220,6 @@ const paintItMiss = (id) => {
         for(let j = -1; j<=1; j++){
             if((abciss + j) < 0 || (abciss + j) > 9) continue;
             if(i === j === 0) continue;
-
             show.miss(document.getElementById('' + (ordinat + i) + (abciss + j)))
         }
     }
